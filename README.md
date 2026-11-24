@@ -11,7 +11,7 @@ Informações com relação a versão dos pacotes utilizados seguem no Trabalho 
 ### Os códigos seguem uma ordem para execução da análise:
 
 ## [MelhoresHits](./MelhoresHits.py)
-Este código foi pensado para retirar os hits com menor e-value de um output do BlastP. Ao atribuir o melhor hit, é possível inferir uma homologia dos transcritos gerados pelo Trinity.
+Este código foi pensado para selecionar os hits com menor e-value do output do BlastP. Ao atribuir o melhor hit, é possível inferir uma homologia dos transcritos gerados pelo Trinity.
 Isto permite obter algum significado biológico para as sequências estudadas (que até então são desconhecidas).
 
 ## [ExtrairDadosFastaToTable](./ExtrairDadosFastaToTable.py)
@@ -30,9 +30,9 @@ A agregação das contagens de leituras para cada espécie resultará 4 tabelas 
 Neste código as tabelas serão mescladas (merged) e depois separadas, com a finalidade de manter a mesma quantidade de linhas em todas as tabelas, transformando em 0 aqueles genes que não foram encontrados em outras espécies (valores nulos).
 
 ## [EntrezIdPathview](./EntrezIdPathview.r)
-Para permitir match com os ids do Pathview, foi necessária a transformação do símbolo do gene para o id do Entrez através do banco de dados de anotação genômica completa para humanos org.Hs.eg.db versão 3.23.1, permitindo assim o mapeamento das vias do KEGG para a espécie *Homo sapiens*.
+Para permitir match com os ids do Pathview, foi necessária a transformação do símbolo do gene para o id do Entrez através do banco de dados de anotação genômica completa para humanos org.Hs.eg.db versão 3.23.1. Com isso, é possível o mapeamento das vias do KEGG para a espécie *Homo sapiens*.
 
-Para contato e esclarescimentos deixo a seguir meu e-mail:
+Para contato e esclarescimentos, deixo a seguir meu e-mail:
 Leandroasfelix@gmail.com
 
 
